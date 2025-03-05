@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source Citations - Nature & Hiking</title>
+    <link rel="stylesheet" href="styles/citations-styles.css">
+</head>
+<body>
+    <!-- Sticky Navigation Menu -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">NATURE</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="index.html#trails">Trails</a>
+            <a href="index.html#blog">Blog</a>
+            <a href="citations.html">Citations</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- Citations Content -->
+    <div class="citations-container">
+        <div class="citations-header">
+            <h1>Source Citations</h1>
+        </div>
+        
+        <div class="citations-content">
+            <div class="citations-section">
+                <h2>Image Sources</h2>
+                <ul class="citations-list">
+                    <li><a href="https://example.com/" target="_blank">Nature Image 1</a> - Scenic Hiking Trail by Photographer Name</li>
+                    <li><a href="https://example.com/" target="_blank">Nature Image 2</a> - Nature Hiking Group by Photographer Name</li>
+                    <li><a href="https://example.com/" target="_blank">Nature Image 3</a> - Mountain Landscape by Photographer Name</li>
+                    <li><a href="https://example.com/" target="_blank">Wildflowers Image</a> - Wildflowers in Meadow by Photographer Name</li>
+                    <li><a href="https://example.com/" target="_blank">Berries Image</a> - Wild Berries on Trail by Photographer Name</li>
+                </ul>
+            </div>
+            
+            <div class="citations-section">
+                <h2>Video Sources</h2>
+                <ul class="citations-list">
+                    <li><a href="https://example.com/" target="_blank">Trails Video</a> - Hiking Trail Footage by Video Creator Name</li>
+                </ul>
+            </div>
+            
+            <div class="citations-section">
+                <h2>Content References</h2>
+                <ul class="citations-list">
+                    <li><a href="https://example.com/" target="_blank">Hiking Trail Guide</a> - Comprehensive Hiking Resource by Author Name</li>
+                    <li><a href="https://example.com/" target="_blank">Nature Photography Tips</a> - Photography Guide by Author Name</li>
+                    <li><a href="https://example.com/" target="_blank">Wildflower Identification Guide</a> - Botanical Resource by Author Name</li>
+                    <li><a href="https://example.com/" target="_blank">Edible Berry Guide</a> - Foraging Resource by Author Name</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Nature & Hiking | All Rights Reserved | Images are created by Copilot</p>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Close mobile menu when a nav link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
